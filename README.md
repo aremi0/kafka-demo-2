@@ -1,5 +1,9 @@
 # SpringKafka demo Application
-Simple application that produce and consume kafka messages,
-sended through HTTP POST request on "localhost:8080/publish" with
-JSON body.
+Simple Producer/Consumer Spring Boot application.
+It listen for POST request on localhost:8080 with JSON body.
 
+Every message will be saved on Kafka (test-topic).
+
+1. Run Docker compose.yaml to start Kafka and Kafka-UI (localhost:8081)
+2. Run Spring Application.
+3. Run python scraper to generate messages.
